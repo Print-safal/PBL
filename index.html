@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Bot</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* You can add more styles here if you want to customize the look of the page */
+        df-messenger {
+            --df-messenger-bot-message: #82a884;
+            --df-messenger-button-titlebar-color: #557257;
+            --df-messenger-chat-background-color: #f0f0f5;
+            --df-messenger-font-color: black;
+            --df-messenger-send-icon: #557257;
+            --df-messenger-user-message: #d8e6d9;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Mindful Bot</h1>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Mindful_bot"
+      agent-id="78c25017-fb13-44bd-88cd-2e8be3e2eead"
+      language-code="en"
+    ></df-messenger>
+</body>
+</html>
